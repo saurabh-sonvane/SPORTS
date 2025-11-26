@@ -1,3 +1,3 @@
 const serverless = require('serverless-http');
-const app = require('./src/app'); // path from repo root to your app
+const app = require('./src/app');
 module.exports = serverless(app);
