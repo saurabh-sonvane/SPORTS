@@ -8,6 +8,11 @@ const errorHandler = require('./middleware/errorHandler');
 
 const app = express();
 
+app.use((req, res, next) => {
+  console.log('🔍 [REQ] ', new Date().toISOString(), req.method, req.originalUrl || req.url);
+  next();
+});
+
 app.use(helmet());
 app.use(express.json({ limit: '10kb' }));
 app.use(cors({ origin: process.env.FRONTEND_URL || '*' }));
