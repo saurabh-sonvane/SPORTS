@@ -19,6 +19,7 @@ app.use(cors({ origin: process.env.FRONTEND_URL || '*' }));
 app.use(rateLimiter);
 
 app.use('/api/lead', leadRoutes);
+app.use('/lead', leadRoutes);
 
 app.get('/health', (req, res) => res.json({ ok: true }));
 
