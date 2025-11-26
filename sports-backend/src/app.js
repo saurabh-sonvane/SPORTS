@@ -7,9 +7,18 @@ const leadRoutes = require('./routes/lead');
 const errorHandler = require('./middleware/errorHandler');
 
 const app = express();
+app.set('trust proxy', 1);
 
 app.use((req, res, next) => {
-  console.log('🔍 [REQ] ', new Date().toISOString(), req.method, req.originalUrl || req.url);
+  console.log(
+    '🔍 [REQ] ',
+    new Date().toISOString(),
+    req.method,
+    req.originalUrl || req.url,
+    'content-length:', req.headers['content-length'],
+    'forwarded:', req.headers['forwarded'],
+    'x-forwarded-for:', req.headers['x-forwarded-for']
+  );
   next();
 });
 
