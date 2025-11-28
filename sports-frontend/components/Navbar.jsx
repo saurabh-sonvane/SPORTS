@@ -1,16 +1,26 @@
 "use client";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
 function Navbar({ className = '' }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <nav className={`absolute top-0 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8 py-4 sm:py-6 ${className}`}>
+    <nav className={` top-0 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8 py-4 sm:py-6 ${className} fixed  ${isScrolled ? "bg-[#111827]/95 backdrop-blur-md shadow-lg" : "bg-transparent"} `}>
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="text-white text-xl sm:text-2xl font-bold tracking-wider">
           SPORTS
