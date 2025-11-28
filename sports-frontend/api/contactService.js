@@ -1,4 +1,5 @@
-const API_URL = 'https://sports-backend.vercel.app/contact-form/api';
+
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
 export const submitContactForm = async (formData) => {
   try {
