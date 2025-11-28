@@ -95,7 +95,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="py-16 px-4 bg-white max-w-[94%] mx-auto">
+    <section id='Contact' className="py-16 px-4 bg-white max-w-[94%] mx-auto">
       {toast.show && (
         <div
           className={`fixed top-4 right-4 px-6 py-3 rounded-lg text-white font-semibold shadow-lg z-50 transition-opacity duration-300 ${

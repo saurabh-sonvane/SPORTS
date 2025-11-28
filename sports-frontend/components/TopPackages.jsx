@@ -33,7 +33,7 @@ const packages = [
 
 export default function TopPackages() {
   return (
-    <section className="w-full max-w-[94%] py-16 px-4 bg-gradient-to-b from-slate-50 to-white mt-52 mx-auto">
+    <section id='packages' className="w-full max-w-[94%] py-16 px-4 bg-gradient-to-b from-slate-50 to-white mt-52 mx-auto">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-2 text-left">

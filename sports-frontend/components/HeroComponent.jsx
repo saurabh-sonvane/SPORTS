@@ -1,6 +1,6 @@
 function HeroSection({ className = '' }) {
   return (
-    <section className={`relative min-h-screen flex items-center justify-center pt-16 sm:pt-16 ${className}`}>
+    <section id="Sports" className={`relative min-h-screen flex items-center justify-center pt-16 sm:pt-16 ${className}`}>
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
@@ -22,7 +22,12 @@ function HeroSection({ className = '' }) {
           Athletic Pursuits International is a tour organization service specializing in sports-focused travel
         </p>
 
-        <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 sm:px-8 md:px-8 py-2.5 sm:py-3 md:py-3 rounded-full text-sm sm:text-base md:text-lg font-medium transition-colors shadow-lg">
+        <button onClick={() => {
+          document.getElementById("Contact")?.scrollIntoView({
+            behavior: "smooth"
+          });
+        }}
+          className="bg-orange-500 hover:bg-orange-600 text-white px-6 sm:px-8 md:px-8 py-2.5 sm:py-3 md:py-3 rounded-full text-sm sm:text-base md:text-lg font-medium transition-colors shadow-lg">
           Plan My Trip
         </button>
       </div>

@@ -34,22 +34,24 @@ function Navbar({ className = '' }) {
         </button>
 
         <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
-          <a href="#" className="text-white hover:text-gray-200 transition-colors text-sm lg:text-base">
+          <a href="#Sports" className="text-white hover:text-gray-200 transition-colors text-sm lg:text-base">
             Sports
           </a>
-          <a href="#" className="text-white hover:text-gray-200 transition-colors text-sm lg:text-base">
-            Places
+          <a href="#packages" className="text-white hover:text-gray-200 transition-colors text-sm lg:text-base">
+            Packages
           </a>
-          <a href="#" className="text-white hover:text-gray-200 transition-colors text-sm lg:text-base">
-            Tailor-made
+          <a href="#WhyUs" className="text-white hover:text-gray-200 transition-colors text-sm lg:text-base">
+            Why Us
           </a>
-          <a href="#" className="text-white hover:text-gray-200 transition-colors text-sm lg:text-base">
-            Past & Reps
+          <a href="#Contact" className="text-white hover:text-gray-200 transition-colors text-sm lg:text-base">
+            Contact
           </a>
-          <a href="#" className="text-white hover:text-gray-200 transition-colors text-sm lg:text-base">
-            Countries
-          </a>
-          <button className="bg-orange-500 hover:bg-orange-600 text-white px-4 lg:px-6 py-2 rounded-full transition-colors text-sm lg:text-base">
+          <button onClick={() => {
+            document.getElementById("Contact")?.scrollIntoView({
+              behavior: "smooth"
+            });
+          }}
+            className="bg-orange-500 hover:bg-orange-600 text-white px-4 lg:px-6 py-2 rounded-full transition-colors text-sm lg:text-base">
             Plan a trip
           </button>
         </div>
@@ -57,22 +59,24 @@ function Navbar({ className = '' }) {
 
       {isOpen && (
         <div className="md:hidden mt-4 pb-4 space-y-3 flex flex-col bg-white p-4 rounded-lg shadow-lg justify-center align-center">
-          <a href="#" className="text-black hover:text-gray-200 transition-colors block py-2 w-fit">
+          <a href="#Sports" className="text-black hover:text-gray-200 transition-colors block py-2 w-fit">
             Sports
           </a>
-          <a href="#" className="text-black hover:text-gray-200 transition-colors block py-2">
-            Places
+          <a href="#Packages" className="text-black hover:text-gray-200 transition-colors block py-2">
+            Packages
           </a>
-          <a href="#" className="text-black hover:text-gray-200 transition-colors block py-2">
-            Tailor-made
+          <a href="# WhyUs" className="text-black hover:text-gray-200 transition-colors block py-2">
+            Why Us
           </a>
-          <a href="#" className="text-black hover:text-gray-200 transition-colors block py-2">
-            Past & Reps
+          <a href="#Contact" className="text-black hover:text-gray-200 transition-colors block py-2">
+            Contact
           </a>
-          <a href="#" className="text-black hover:text-gray-200 transition-colors block py-2">
-            Countries
-          </a>
-          <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full transition-colors w-full">
+          <button onClick={() => {
+            document.getElementById("Contact")?.scrollIntoView({
+              behavior: "smooth"
+            });
+          }}
+            className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full transition-colors w-full">
             Plan a trip
           </button>
         </div>

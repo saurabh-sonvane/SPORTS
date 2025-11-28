@@ -1,9 +1,11 @@
+'use client';
 
 import SportsHero from '@/components/HeroComponent'
 import Navbar from '@/components/Navbar'
 import F1JapanCard from '@/components/F1JapanCard'
 import TopPackages from '@/components/TopPackages'
 import ContactSection from '@/components/ContactSection'
+import WhyChooseUs from '@/components/WhyChooseUs'
 import Footer from '@/components/Footer'
 import "../app/globals.css"
 
@@ -16,6 +18,7 @@ export default function Home() {
         <F1JapanCard />
       </div>
       <TopPackages />
+      <WhyChooseUs />
       <ContactSection />
       <Footer />
 
