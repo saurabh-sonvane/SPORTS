@@ -2,7 +2,7 @@ import React from 'react';
 
 const F1JapanCard = () => {
     return (
-        <div className="absolute -bottom-56 left-1/2 -translate-x-1/2 w-full max-w-[85%] px-4 z-20">
+        <div className="absolute -bottom-56 left-1/2 -translate-x-1/2 w-full max-w-[94%] px-4 z-20">
             <div
                 className="relative rounded-xl overflow-hidden shadow-2xl h-64 bg-cover bg-center"
                 style={{
@@ -27,25 +27,6 @@ const F1JapanCard = () => {
                         <button className="bg-orange-500 hover:bg-orange-600 text-white text-sm w-fit font-semibold py-2 px-5 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
                             Request My Package
                         </button>
-                    </div>
-
-                    <div className="absolute bottom-2 right-3">
-                        {/* <button > */}
-                        <a
-                            href={"https://wa.me/919588680004?text=Hello%20there"}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Chat on WhatsApp"
-                            className="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl"
-                        >
-                            <img
-                                src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"  // direct SVG link
-                                alt="WhatsApp"
-                                className="w-8 h-8"
-                            />
-                        </a>
-                        {/* </button> */}
-
                     </div>
                 </div>
             </div>

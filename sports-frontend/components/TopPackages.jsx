@@ -7,41 +7,38 @@ import { ArrowRight } from 'lucide-react';
 const packages = [
   {
     id: '1',
-    title: 'Corporate Gala Experience',
-    image_url: 'https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=800',
+    title: 'Tour de France',
+    image_url: 'https://images.unsplash.com/photo-1510766528597-60f9f1c154b6?q=80&w=846&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     starting_price: 2499.99,
   },
   {
     id: '2',
-    title: 'Outdoor Festival Package',
-    image_url: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=800',
+    title: 'FIFA World Cup',
+    image_url: 'https://images.unsplash.com/photo-1569863959165-56dae551d4fc?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=compress&cs=tinysrgb&w=800',
     starting_price: 1299.99,
   },
   {
     id: '3',
-    title: 'Wedding Premium Bundle',
-    image_url: 'https://images.pexels.com/photos/169198/pexels-photo-169198.jpeg?auto=compress&cs=tinysrgb&w=800',
+    title: 'Slam Dunk Showdown',
+    image_url: 'https://plus.unsplash.com/premium_photo-1661483635418-f1a527d93aa2?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=compress&cs=tinysrgb&w=800',
     starting_price: 4999.99,
   },
   {
     id: '4',
-    title: 'Team Building Retreat',
-    image_url: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',
+    title: 'Indian Premier League',
+    image_url: 'https://plus.unsplash.com/premium_photo-1733313613724-3ea5f9eec5ca?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=compress&cs=tinysrgb&w=800',
     starting_price: 1899.99,
   },
 ];
 
 export default function TopPackages() {
   return (
-    <section className="w-full py-16 px-4 bg-gradient-to-b from-slate-50 to-white">
+    <section className="w-full max-w-[94%] py-16 px-4 bg-gradient-to-b from-slate-50 to-white mt-52 mx-auto">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-            Top Packages
+        <div className="text-center mb-8">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-2 text-left">
+            TOP PACKAGES
           </h2>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Discover our handpicked selection of premium event packages designed to create unforgettable experiences
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -50,7 +47,7 @@ export default function TopPackages() {
               key={pkg.id}
               className="group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
             >
-              <div className="relative h-64 overflow-hidden bg-slate-200">
+              <div className="relative h-64 overflow-hidden bg-slate-200 mb-4">
                 <img
                   src={pkg.image_url}
                   alt={pkg.title}
@@ -60,7 +57,7 @@ export default function TopPackages() {
               </div>
 
               <CardContent className="p-6 space-y-4">
-                <h3 className="text-xl font-bold text-slate-900 line-clamp-2 min-h-[3.5rem]">
+                <h3 className="text-xl font-bold text-slate-900 line-clamp-2 min-h-[2rem] text-left">
                   {pkg.title}
                 </h3>
 
@@ -72,11 +69,10 @@ export default function TopPackages() {
                 </div>
 
                 <button
-                  className="w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold py-6 rounded-lg transition-all duration-300 group-hover:bg-blue-600"
+                  className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-lg transition-all duration-300"
                   size="lg"
                 >
                   <span>View Details</span>
-                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </button>
               </CardContent>
             </Card>

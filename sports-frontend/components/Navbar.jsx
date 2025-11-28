@@ -39,30 +39,30 @@ function Navbar({ className = '' }) {
           <a href="#" className="text-white hover:text-gray-200 transition-colors text-sm lg:text-base">
             Countries
           </a>
-          <button className="bg-red-500 hover:bg-red-600 text-white px-4 lg:px-6 py-2 rounded-full transition-colors text-sm lg:text-base">
+          <button className="bg-orange-500 hover:bg-orange-600 text-white px-4 lg:px-6 py-2 rounded-full transition-colors text-sm lg:text-base">
             Plan a trip
           </button>
         </div>
       </div>
 
       {isOpen && (
-        <div className="md:hidden mt-4 pb-4 space-y-3 flex flex-col">
-          <a href="#" className="text-white hover:text-gray-200 transition-colors block py-2">
+        <div className="md:hidden mt-4 pb-4 space-y-3 flex flex-col bg-white p-4 rounded-lg shadow-lg justify-center align-center">
+          <a href="#" className="text-black hover:text-gray-200 transition-colors block py-2 w-fit">
             Sports
           </a>
-          <a href="#" className="text-white hover:text-gray-200 transition-colors block py-2">
+          <a href="#" className="text-black hover:text-gray-200 transition-colors block py-2">
             Places
           </a>
-          <a href="#" className="text-white hover:text-gray-200 transition-colors block py-2">
+          <a href="#" className="text-black hover:text-gray-200 transition-colors block py-2">
             Tailor-made
           </a>
-          <a href="#" className="text-white hover:text-gray-200 transition-colors block py-2">
+          <a href="#" className="text-black hover:text-gray-200 transition-colors block py-2">
             Past & Reps
           </a>
-          <a href="#" className="text-white hover:text-gray-200 transition-colors block py-2">
+          <a href="#" className="text-black hover:text-gray-200 transition-colors block py-2">
             Countries
           </a>
-          <button className="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-full transition-colors w-full">
+          <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full transition-colors w-full">
             Plan a trip
           </button>
         </div>
